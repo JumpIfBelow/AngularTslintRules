@@ -1,0 +1,18 @@
+{
+  "name": "angular-tslint-rules",
+  "version": "1.0.0",
+  "description": "Linting for Angular applications, adding extra rules to codelyzer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:A5sys/AngularTslintRules.git"
+  },
+  "keywords": [
+    "Angular",
+    "style guide",
+    "styleguide",
+    "nglint",
+    "lint",
+    "tslint"
+  ],
+  "license": "MIT"
+}
