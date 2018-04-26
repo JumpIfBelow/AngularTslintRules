@@ -1,6 +1,5 @@
 import * as ts from 'typescript';
 import * as Lint from 'tslint';
-import { forEach } from '@angular/router/src/utils/collection';
 import { IOptions } from 'tslint/lib/language/rule/rule';
 
 /**
@@ -38,7 +37,7 @@ export class Rule extends Lint.Rules.AbstractRule {
 class TypescriptAngularFilenameWalker extends Lint.RuleWalker {
   private allAllowed: string[] = [];
   private failureMessage = 'The filename must end with:';
-  private static prefix = [
+  private prefix = [
     'component',
     'service',
     'module',
@@ -47,11 +46,11 @@ class TypescriptAngularFilenameWalker extends Lint.RuleWalker {
     'pipe',
     'tools'
   ];
-  private static suffix = [
+  private suffix = [
     'ts',
     'spec.ts',
   ];
-  private static ignore = [
+  private ignore = [
     'public_api.ts'
   ];
 
@@ -100,12 +99,12 @@ class TypescriptAngularFilenameWalker extends Lint.RuleWalker {
   }
 
   private computeAllAllowed(options: IOptions): void {
-    let prefix = TypescriptAngularFilenameWalker.prefix;
-    let suffix = TypescriptAngularFilenameWalker.suffix;
-    let ignore = TypescriptAngularFilenameWalker.ignore;
+    let prefix = this.prefix;
+    let suffix = this.suffix;
+    let ignore = this.ignore;
 
     if (options.ruleArguments[0]) {
-      const args =options.ruleArguments[0];
+      const args = options.ruleArguments[0];
       if (args['prefix']) {
         prefix = args['prefix'];
       }
@@ -117,9 +116,9 @@ class TypescriptAngularFilenameWalker extends Lint.RuleWalker {
       }
     }
 
-    prefix.forEach ((prefix) => {
-      suffix.forEach((suffix) => {
-        this.allAllowed.push('.' + prefix + '.' + suffix);
+    prefix.forEach ((prefixEl) => {
+      suffix.forEach((suffixEl) => {
+        this.allAllowed.push('.' + prefixEl + '.' + suffixEl);
       });
     });
 
