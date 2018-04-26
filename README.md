@@ -26,8 +26,8 @@ You can use custom the rule:
         "tools"
       ],
       "suffix": [
-        "'ts",
-        "spec.ts","
+        "ts",
+        "spec.ts",
       ],
       "ignore": [
         "public_api.ts"
