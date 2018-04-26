@@ -1,6 +1,6 @@
 {
   "name": "@a5sys/angular-tslint-rules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Linting for Angular applications, adding extra rules to codelyzer",
   "scripts": {
     "build": "rimraf dist && ./node_modules/typescript/bin/tsc && cp package.json ./dist/package.json"
@@ -18,9 +18,8 @@
     "tslint"
   ],
   "license": "MIT",
-  "dependencies": {
-    "tslint": "^5.9.1",
-    "typescript": "^2.8.3"
+  "peerDependencies": {
+    "tslint": "^5.0.0"
   },
   "devDependencies": {
     "@angular/compiler": "^5.2.10",
@@ -32,6 +31,10 @@
     "codelyzer": "^4.3.0",
     "rimraf": "^2.6.2",
     "rxjs": "^5.5.10",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "tslint": "^5.9.1"
   }
 }
