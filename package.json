@@ -1,6 +1,6 @@
 {
   "name": "@a5sys/angular-tslint-rules",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Linting for Angular applications, adding extra rules to codelyzer",
   "scripts": {
     "build": "rimraf dist && ./node_modules/typescript/bin/tsc && cp package.json ./dist/package.json"
