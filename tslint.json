@@ -29,6 +29,10 @@
     ],
     "interface-over-type-literal": true,
     "label-position": true,
+    "linebreak-style": [
+      true,
+      "LF"
+    ],
     "max-line-length": [
       true,
       200
@@ -59,7 +63,7 @@
     "no-debugger": true,
     "no-duplicate-super": true,
     "no-empty": false,
-    "no-empty-interface": false,
+    "no-empty-interface": true,
     "no-eval": true,
     "no-inferrable-types": [
       true,
@@ -114,6 +118,7 @@
       true,
       "check-branch",
       "check-decl",
+      "check-module",
       "check-operator",
       "check-separator",
       "check-type"
