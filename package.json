@@ -19,7 +19,10 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "@typescript-eslint/parser": "^1.10.2"
+    "@typescript-eslint/parser": "^1.10.2",
+    "eslint": "^5.16.0",
+    "zone.js": "~0.8.26",
+    "tslint": "^5.17.0"
   },
   "devDependencies": {
     "@angular/compiler": "^7.2.0",
@@ -31,10 +34,12 @@
     "codelyzer": "^5.1.0",
     "rimraf": "^2.6.3",
     "rxjs": "^6.5.0",
-    "typescript": "^3.5.0",
-    "zone.js": "^0.9.0"
+    "typescript": "^3.5.0"
   },
   "dependencies": {
-    "@typescript-eslint/parser": "^1.10.2"
+    "@typescript-eslint/parser": "^1.10.2",
+    "eslint": "^5.16.0",
+    "zone.js": "~0.8.26",
+    "tslint": "^5.17.0"
   }
 }
